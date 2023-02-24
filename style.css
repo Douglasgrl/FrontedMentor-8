@@ -1,0 +1,264 @@
+:root{
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+    position: relative;
+}
+
+.svg-top{
+    width: 60%;
+    position: absolute;
+    z-index: -1;
+    margin: auto;
+}
+
+.svg-top-mobile{
+    width: 100%;
+    z-index: -1;
+}
+
+.svg-bottom__desktop{
+    position: absolute;
+    width: 85%;
+    bottom: 0;
+    right: 0;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.title-start{
+    color: var(--very-dark-magenta);
+    font-weight: 700;
+    padding-bottom: 1.2rem;
+    font-size: 2.6rem;
+}
+
+.paragraph-start{
+    color: var(--dark-grayish-magenta);
+    font-weight: 500;
+    padding-bottom: 1.2rem;
+    font-size: 14px
+}
+
+.container-mid{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin: 10px;
+    color: var(--very-dark-magenta);
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.mid-container-one{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    margin: auto;
+    background-color: var(--light-grayish-magenta);
+    border-radius: 10px;
+}
+
+.mid-container-two{
+    width: 100%;    
+    margin: 10px 0;
+    padding: 10px;
+    background-color: var(--light-grayish-magenta);
+    border-radius: 10px;
+}
+
+.mid-container-three{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--light-grayish-magenta);
+    border-radius: 10px;   
+}
+
+.container-final{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    gap: 10px;
+}
+
+.final-cont-one{
+    background-color: var(--very-dark-magenta);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 220px;
+    padding: 20px;
+    color: var(--light-grayish-magenta);
+    border-radius: 5px;
+    font-weight: 500;
+    text-align: start;
+}
+
+.final-cont-two{
+    background-color: var(--very-dark-magenta);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 220px;
+    padding: 20px;
+    color: var(--light-grayish-magenta);
+    border-radius: 5px;
+    font-weight: 500;
+    text-align: start;
+}
+
+.final-cont-three{
+    background-color: var(--very-dark-magenta);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 220px;
+    padding: 20px;
+    color: var(--light-grayish-magenta);
+    border-radius: 5px;
+    font-weight: 500;
+    text-align: start;
+}
+
+.final-cont__cart{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    align-items: center;
+}
+
+.img-final{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.paragraph-grey{
+    color: var(--dark-grayish-magenta);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.final-inter__one p:first-of-type{
+    color: var(--white);
+}
+
+.final-inter__two p:nth-last-of-type(2){
+    color: var(--white);
+}
+
+.final-inter__three p:nth-last-of-type(3){
+    color: var(--white);
+}
+
+
+.attribution{
+    padding: 20px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width:900px){
+    .container{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .container-start{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: start;
+        padding: 0 40px;
+    }
+
+    .container-mid{
+        width: 50%;
+        align-items: center;
+    }
+
+    .mid-container-one{
+        width: 70%;
+        margin: 10px 0;
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+
+    }
+
+    .mid-container-two{
+        width: 70%;
+        margin: 10px 0;
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        left: 50px;
+    }
+
+    .mid-container-three{
+        width: 70%;
+        margin: 10px 0;
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        left: 100px;
+    }
+    
+
+    .container-final{
+        flex-direction: row;
+        width: 75%;
+        justify-content: start;
+        margin: auto;
+    }
+    
+    .final-cont-one{
+        width: 80%;
+        position: relative;
+        bottom: 20px;
+    }
+
+    .final-cont-two{
+        width: 80%;
+    }
+
+    .final-cont-three{
+        width: 80%;
+        position: relative;
+        top: 20px;
+    }
+}
